@@ -649,7 +649,7 @@ if MLLIB_SPARK_VERSION >= 1.4:
         MLLIB_JAVA_OPTS, [ConstantOption("lda")] + MLLIB_LDA_TEST_OPTS)]
 
 MLLIB_PIC_TEST_OPTS = MLLIB_COMMON_OPTS + [
-    OptionSet("num-examples", [10000000], can_scale=True),
+    OptionSet("num-points", [10000000], can_scale=True),
     OptionSet("node-degree", [20], can_scale=False),
     OptionSet("num-centers", [40], can_scale=False),
     OptionSet("num-iterations", [20])]
